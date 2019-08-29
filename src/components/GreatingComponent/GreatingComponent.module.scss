@@ -1,0 +1,29 @@
+@import '../../assets/style/style.scss';
+
+.GreatingComponent{
+    @extend .containerStyle;
+    color: $grey-text;
+    div{
+        margin: auto;
+    }
+    span{
+        padding: 0 5px;
+        cursor: pointer;
+        font-size: 0.9em;
+        &:hover { 
+            text-decoration: underline;
+        }
+
+    }
+    h1{
+        font-size: 1.3em;
+        font-weight: 600;
+        margin: 0;  
+        font-family: $font-question;
+        color: $light-text-color;
+        cursor: pointer;
+        &:hover{
+            color: $hover-text-color;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+@import '../../assets/style/style.scss';
+
+.FeedBoxComponent{
+    @extend .containerStyle;
+    span{
+        font-size: 0.9em;
+        padding: 0 5px;
+        cursor: pointer;
+        color: $grey-text;
+        &:hover { 
+            text-decoration: underline;
+        }
+    }
+    h1{
+        font-size: 1.2em;
+        font-weight: 700;
+        margin: 0;
+        color: $black-text-color;
+        padding-bottom: 10px;
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    p{
+        margin: 5px 0px;
+    }
+    .crossIcon{
+        float: right;
+        color: $grey-text;
+        cursor: pointer;
+    }
+    .PublisherDetail{
+        padding: 5px 0px;
+        display: inline;
+        color: $grey-text;
+        div{
+            box-sizing: border-box;
+            display: inline-block;
+            height: 40px;
+        }
+        p{
+            font-size: 0.83em;
+            &:first-of-type{
+                color: $black-text-color;
+                font-family: $font-question2;
+            }
+            padding: 0px;
+            margin: 0px;
+        }
+        .imageStyle{
+            width: 10%;
+        }
+        .textStyle{
+            width: 90%;
+            span{
+                color: $black-text-color;
+                font-size: 1em;
+                cursor: pointer;
+                padding: 0;
+                &:hover{
+                    text-decoration: underline;
+                }                
+            }
+        }
+    }
+}
