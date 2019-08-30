@@ -2,15 +2,18 @@
 
 .FeedBoxComponent{
     @extend .containerStyle;
-    span{
-        font-size: 0.9em;
-        padding: 0 5px;
-        cursor: pointer;
-        color: $grey-text;
-        &:hover { 
-            text-decoration: underline;
+    &>div{
+        &>span{
+            font-size: 0.9em;
+            padding: 0 5px;
+            cursor: pointer;
+            color: $grey-text;
+            &:hover { 
+                text-decoration: underline;
+            }
         }
     }
+    
     h1{
         font-size: 1.2em;
         font-weight: 700;
@@ -25,11 +28,32 @@
     p{
         margin: 5px 0px;
     }
-    .crossIcon{
-        float: right;
-        color: $grey-text;
-        cursor: pointer;
-    }
+    // .crossIcon{
+    //     &:hover{
+    //         span{
+    //             visibility: visible;
+    //         }
+    //     }
+    //     display: inline-block;
+    //     float: right;
+    //     position: relative;
+    //     right: 0px;
+    //     color: $grey-text;
+    //     cursor: pointer;
+    //     span{
+    //         visibility: hidden;
+    //         color: $white-color;
+    //         background-color: $tooltip-background-color;
+    //         z-index: 900;
+    //         padding: 2px 5px;
+    //         border-radius: 3px;
+    //         position: absolute;
+    //         width: 125px;
+    //         bottom: 100%;
+    //         left: 50%;
+    //         margin-left: -66px;
+    //     }
+    // }
     .PublisherDetail{
         padding: 5px 0px;
         display: inline;

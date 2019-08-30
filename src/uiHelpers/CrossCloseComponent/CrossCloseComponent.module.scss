@@ -1,0 +1,39 @@
+@import '../../assets/style/style.scss';
+
+.CrossCloseComponent{
+    &:hover{
+        span{
+            visibility: visible;
+        }
+    }
+    font-size: .9em;
+    display: inline-block;
+    float: right;
+    position: relative;
+    right: 0px;
+    color: $grey-text;
+    cursor: pointer;
+    span{
+        visibility: hidden;
+        color: $white-color;
+        background-color: $tooltip-background-color;
+        z-index: 900;
+        padding: 3px 5px;
+        border-radius: 3px;
+        position: absolute;
+        width: 114px;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -64px;
+        &::after{
+            content: " ";
+            position: absolute;
+            top: 100%; /* At the bottom of the tooltip */
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: $tooltip-background-color transparent transparent transparent;
+        }
+    }
+}

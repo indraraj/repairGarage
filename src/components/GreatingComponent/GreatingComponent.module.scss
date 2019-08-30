@@ -3,9 +3,6 @@
 .GreatingComponent{
     @extend .containerStyle;
     color: $grey-text;
-    div{
-        margin: auto;
-    }
     span{
         padding: 0 5px;
         cursor: pointer;

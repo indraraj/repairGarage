@@ -1,8 +1,7 @@
 import React from 'react';
 import styles from './FeedBoxComponent.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faWindowClose } from '@fortawesome/free-solid-svg-icons';
 import UserImageComponent from '../../uiHelpers/UserImageComponent/UserImageComponent';
+import CrossCloseComponent from '../../uiHelpers/CrossCloseComponent/CrossCloseComponent';
 
 const FeedBoxComponent = (props) =>{
     return(
@@ -10,7 +9,7 @@ const FeedBoxComponent = (props) =>{
             <div>
                 <UserImageComponent imgName='userImage' size='20px' imgText='userImage'></UserImageComponent>
                 <span>Riya Shukla unvoted this . 4hr</span>
-                <FontAwesomeIcon icon={faWindowClose} className={styles.crossIcon}/>
+                <CrossCloseComponent tooltipType='close'>Hide this Section.</CrossCloseComponent>
             </div>
             <h1>What made your heart melt today?</h1>
             <div className={styles.PublisherDetail}>

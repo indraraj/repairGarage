@@ -19,8 +19,8 @@
         }
     }
     .textStyle{
-        position: relative;
-        left: 10px;
+        display: inline;
+        padding-left: 10px;
     }
     .selected{
         background-color: $dark-grey-background;

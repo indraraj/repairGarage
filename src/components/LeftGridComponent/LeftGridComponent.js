@@ -9,12 +9,12 @@ const LeftGridComponent = (props) =>{
                 <div>
                     <div ><FontAwesomeIcon icon={faNewspaper}/></div>
                     
-                    <div className={styles.textStyle}>Feed</div>
+                    <p className={styles.textStyle}>Feed</p>
                 </div>
                 <div className={styles.selected}>
                     <div ><FontAwesomeIcon icon={faMicrophone}/></div>
                     
-                    <div className={styles.textStyle}>Sessions</div>
+                    <p className={styles.textStyle}>Sessions</p>
                 </div>
             </div>
     )

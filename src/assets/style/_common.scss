@@ -11,3 +11,12 @@
     padding-bottom: 15px;
     text-align: left;
 }
+
+.overlayContainer{
+    @extend .containerStyle;
+    visibility: hidden;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    z-index: 10000;
+}

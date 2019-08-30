@@ -1,0 +1,70 @@
+@import '../../../assets/style/style.scss';
+
+.AskQuestionComponent{
+    @extend .overlayContainer;
+    div{
+      padding: 0px 20px;
+      &:last-of-type{
+        padding: 0px;
+      }
+    }
+    .overlayBody{
+      div{
+        padding: 0px 5px;
+        // &:last-of-type{
+        //   padding: 5px 15px;
+        //   margin: 0px 10px;
+        // }
+      }
+      .ModelBodyHead{
+        color: $grey-text;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        div{
+          display: inline;
+        }
+        .anonymityConcent{
+          cursor: pointer;
+          background-color: $dark-grey-background;
+          border: none;
+          border-radius: 15px;
+          span{
+            padding: 0px 5px;
+          }
+        }
+      }
+      .ModelBodyContent{
+        input{
+          width: 100%;
+          height: 40px;
+          border: none;
+          font-size: 1.5em;
+          padding-bottom: 10px;
+          outline: none;
+        }
+        div{
+          &:last-of-type{
+            height: 200px;;
+          }
+        }
+      }
+    } 
+    .overlayFooter{
+      text-align: right;
+      background-color: $gray-background-color;
+      margin: 0 -10px -15px -10px;
+      height: 50px;
+      hr{
+        margin: 0;
+      }
+      div{
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        height: inherit;;
+        flex-direction: row-reverse;
+      }
+    }
+  }

@@ -4,6 +4,7 @@ const images = {
     //     comments: require('./profile/comments.png'),
     // },
     userImage: require('./indra.jpg'),
+    logo: require('./logo.PNG')
 };
 
 export default images;
