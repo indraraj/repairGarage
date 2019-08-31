@@ -15,6 +15,7 @@
     display: flex;
     color: $grey-text;
     .HedearLogo{
+        cursor: pointer;
         width: 10%;
         outline: none;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -38,7 +39,7 @@
             cursor: pointer;
             text-align: center;
             // margin: auto;
-            padding: 10px 5px;
+            padding: 10px 10px;
         }
         span{
             padding: 0px 5px; 
@@ -56,10 +57,12 @@
             margin: auto 0px;
         }
         input{
+            box-sizing: border-box;
             border: 1px solid $border-color;
-            min-height: 25px;
+            min-height: 30px;
             border-radius: 5px;
             width: 100%;
+            padding: 0 10px 0 30px;
         }
         button{
             width: 100%;
@@ -72,6 +75,12 @@
         .searchBox{
             width: 60%;
             padding: 0px 5px;
+            .searchIcon{
+                font-size: 0.9em;
+                position: fixed;
+                padding-left: 10px;
+                padding-top: 8px;
+            }
         }
         .profileImage{
             width: 15%;

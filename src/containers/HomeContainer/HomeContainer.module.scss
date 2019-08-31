@@ -1,7 +1,20 @@
 @import '../../assets/style/style.scss';
 
 .GridPageContent{
-    margin: 0px 10%;
-    padding: 83px 32px 32px 32px;
-    background-color: $gray-background-color;
+    margin-top: 50px;
+    .GridPageContentSection{
+        margin: 0px 10%;
+        padding: 32px 32px 32px 32px;
+        background-color: $gray-background-color;
+    }
+    .GridPageContentSectionOverlay{
+        visibility: hidden;
+        background: rgba(0,0,0,0.65);
+        z-index: 999;
+        position: fixed;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 }

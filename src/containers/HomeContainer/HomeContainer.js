@@ -9,7 +9,10 @@ class HomeContainer extends Component {
             <Fragment>
                 <HeaderComponent></HeaderComponent>
                 <div className={styles.GridPageContent}>
-                    <ContentGridComponent></ContentGridComponent>
+                    <div className={styles.GridPageContentSection}>
+                        <ContentGridComponent></ContentGridComponent>
+                    </div>
+                    <div className={styles.GridPageContentSectionOverlay}></div>
                 </div>
             </Fragment>
         )

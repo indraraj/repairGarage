@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './HeaderComponent.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faEdit, faBell } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faEdit, faBell } from '@fortawesome/free-regular-svg-icons';
 import UserImageComponent from '../../uiHelpers/UserImageComponent/UserImageComponent';
 
 const HeaderComponent = (props) =>{
@@ -26,6 +27,7 @@ const HeaderComponent = (props) =>{
             </div>
             <div className={styles.HeaderTopsection}>
                 <div className={styles.searchBox}>
+                    <FontAwesomeIcon icon={faSearch} className={styles.searchIcon}></FontAwesomeIcon>
                     <input type='text'></input>
                 </div>
                 <div className={styles.profileImage}>

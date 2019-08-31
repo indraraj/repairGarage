@@ -2,6 +2,10 @@ import React from 'react';
 import styles from './FeedBoxComponent.module.scss';
 import UserImageComponent from '../../uiHelpers/UserImageComponent/UserImageComponent';
 import CrossCloseComponent from '../../uiHelpers/CrossCloseComponent/CrossCloseComponent';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEllipsisH, faShare } from '@fortawesome/free-solid-svg-icons';
+import { faHeart, faComment } from '@fortawesome/free-regular-svg-icons';
+
 
 const FeedBoxComponent = (props) =>{
     return(
@@ -28,6 +32,14 @@ He was handcuffed and taken to the winner king.At that time the winner king was 
 
 The king kept a proposal for Harshavardhan and said, “ If you can answer me a question correctly I will return your kingdom or else leave aside the kingdom, you shall have to remain a prisoner for the rest of your life in my country.”
             </p>
+            <div  className={styles.feedBoxFooter}>
+                <FontAwesomeIcon className={styles.iconPadding} icon={faHeart}/>
+                <FontAwesomeIcon className={styles.iconPadding} icon={faComment}/>
+                <div>
+                    <FontAwesomeIcon className={styles.iconPadding} icon={faEllipsisH}/>
+                    <FontAwesomeIcon className={styles.iconPadding} icon={faShare}/>
+                </div>
+            </div>
         </div>
     )
 }
