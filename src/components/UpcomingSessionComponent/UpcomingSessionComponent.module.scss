@@ -1,0 +1,99 @@
+@import '../../assets/style/style.scss';
+
+.UpcomingSessionComponent{
+    @extend .containerStyle;
+    .componentHeading{
+        color: $theme-color;
+        padding: 0px 10px 5px 10px;
+        span{
+            color: $black-text-color;
+            padding: 0px 10px;
+        }
+    }
+    .scrollSection{
+        padding: 5px 0px;
+        overflow-x: scroll;
+        display: flex;
+        div{
+            margin: 5px;
+        }
+        .scrollLeft{
+            position: fixed;
+            top: 50px;
+            left: 10px;
+            z-index: 500;
+            width: 50px;
+            height: 80px;
+            background-color: $gray-background-color;
+            font-weight: 600;
+            font-size: 1em;
+        }
+        .scrollCards{
+            cursor: pointer;
+            &:hover{
+                background-color: $gray-background-color;
+            }
+            border: 1px solid $border-color;
+            border-radius: 5px;
+            min-width: 250px;
+            // height: 150px;
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+            .scrollCardsTop{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100px;
+                div{
+                    &:last-of-type{
+                        font-size: 0.9em;
+                        color: $grey-text;
+                        padding: 10px;
+                    }
+                }
+                .scrollCardsHeading{
+                    display: flex;
+                    align-items: center;
+                    height: 50px;;
+                    div{
+                        padding: 0px 10px;
+                    }
+                    p{
+                        margin: 0;
+                        font-size: 1em;
+                        font-weight: 600;
+                        color: $black-text-color;
+                    }                
+                    span{
+                        font-size: 0.8em;
+                    }
+                }
+            }
+            .scrollCardsFooter{
+                border-top: 1px solid $border-color;
+                padding: 5px;
+                display: flex;
+                justify-content: space-between;
+                color: $grey-text;
+                align-items: center;
+                p{
+                    margin: 0;
+                    color: $hover-text-color;
+                    font-weight: 600;
+                } 
+            }
+        }
+    }
+    .componentBottom{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        color: $grey-text;
+        cursor: pointer;
+        p{
+            margin: 0;
+            padding: 0px 10px;
+        }
+    }
+}

@@ -25,11 +25,6 @@
             text-decoration: underline;
         }
     }
-    p{
-        margin: 5px 0px;
-        padding-bottom: 10px;
-        color: $grey-text;
-    }
     .PublisherDetail{
         padding: 5px 0px;
         display: inline;
@@ -64,6 +59,15 @@
             }
         }
     }
+    .feedContent{
+        max-height: 150px;
+        overflow: hidden;
+        p{
+            margin: 5px 0px;
+            padding-bottom: 10px;
+            color: $grey-text;
+        }
+    }
     .feedBoxFooter{
         color: $grey-text;
         height: 30px;
@@ -71,6 +75,7 @@
         align-items: center;
         .iconPadding{
             padding: 0px 5px;
+            cursor: pointer;
         }
         div{
             width: 100%;

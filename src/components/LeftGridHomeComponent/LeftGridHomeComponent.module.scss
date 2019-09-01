@@ -1,11 +1,6 @@
 @import '../../assets/style/style.scss';
 
-.LeftGridComponent{
-    width: 25%;
-    text-align: left;
-    color: $grey-text;
-    box-sizing: border-box;
-    padding: 0px 20px 0px 10px;
+.LeftGridHomeComponent{
     div{
         cursor: pointer;
         margin-bottom: 8px;

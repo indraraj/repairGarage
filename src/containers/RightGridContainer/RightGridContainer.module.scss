@@ -1,0 +1,28 @@
+@import '../../assets/style/style.scss';
+
+.RightGridContainer{
+    width: 25%;
+    text-align: left;
+    color: $grey-text;
+    box-sizing: border-box;
+    padding: 0px 15px 0px 45px;
+    .containerBox{
+        @extend .containerStyle;
+        p{
+            margin: 5px 0px;
+            color: $black-text-color;
+        }
+        span{
+            font-size: 0.9em;
+        }
+        button{
+            background-color: $light-theme-color;
+            color: $theme-color;
+            margin: 10px;
+            height: 30px;
+            border: 1px solid $theme-color;
+            border-radius: 10px;
+            display: block;
+        }
+    }
+}

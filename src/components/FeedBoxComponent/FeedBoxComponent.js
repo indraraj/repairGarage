@@ -25,13 +25,16 @@ const FeedBoxComponent = (props) =>{
                     <p>Answered 14h ago</p>
                 </div>            
             </div>
-            <p>
-            King Harshavardhan was defeated in the battle.
+            <div className={styles.feedContent}>
+                <p>
+                King Harshavardhan was defeated in the battle.
 
-He was handcuffed and taken to the winner king.At that time the winner king was in a happy mood.
+    He was handcuffed and taken to the winner king.At that time the winner king was in a happy mood.
 
-The king kept a proposal for Harshavardhan and said, “ If you can answer me a question correctly I will return your kingdom or else leave aside the kingdom, you shall have to remain a prisoner for the rest of your life in my country.”
-            </p>
+    The king kept a proposal for Harshavardhan and said, “ If you can answer me a question correctly I will return your kingdom or else leave aside the kingdom, you shall have to remain a prisoner for the rest of your life in my country.”
+    He was handcuffed and taken to the winner king.At that time the winner king was in a happy mood.He was handcuffed and taken to the winner king.At that time the winner king was in a happy mood.
+                </p>
+            </div>
             <div  className={styles.feedBoxFooter}>
                 <FontAwesomeIcon className={styles.iconPadding} icon={faHeart}/>
                 <FontAwesomeIcon className={styles.iconPadding} icon={faComment}/>
