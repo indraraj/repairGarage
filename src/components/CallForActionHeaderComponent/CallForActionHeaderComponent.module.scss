@@ -1,0 +1,11 @@
+@import '../../assets/style/style.scss';
+
+.CallForActionHeaderComponent{
+    color: $theme-color;
+        border-bottom: 1px solid $border-color;
+        padding-bottom: 10px;
+        span{
+            color: $black-text-color;
+            padding: 0px 10px;
+        }
+}

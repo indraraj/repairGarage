@@ -1,7 +1,10 @@
 import React, { Component, Fragment } from 'react';
 import styles from './HomeContainer.module.scss';
 import HeaderComponent from '../../components/HeaderComponent/HeaderComponent';
-import ContentGridComponent from '../../components/ContentGridComponent/ContentGridComponent';
+import RightGridContainer from '../RightGridContainer/RightGridContainer';
+import LeftGridContainer from '../LeftGridContainer/LeftGridContainer';
+import GridHomeComponent from '../../components/GridHomeComponent/GridHomeComponent';
+import GridAnswerComponent from '../../components/GridAnswerComponent/GridAnswerComponent';
 
 class HomeContainer extends Component {
     render(){
@@ -10,7 +13,14 @@ class HomeContainer extends Component {
                 <HeaderComponent></HeaderComponent>
                 <div className={styles.GridPageContent}>
                     <div className={styles.GridPageContentSection}>
-                        <ContentGridComponent></ContentGridComponent>
+                        <div className={styles.ContentGridComponent}>
+                            <LeftGridContainer></LeftGridContainer>
+                            <div className={styles.cass2}>
+                                {/* <GridHomeComponent></GridHomeComponent> */}
+                                <GridAnswerComponent></GridAnswerComponent>
+                            </div>
+                            <RightGridContainer></RightGridContainer>
+                        </div>
                     </div>
                     <div className={styles.GridPageContentSectionOverlay}></div>
                 </div>

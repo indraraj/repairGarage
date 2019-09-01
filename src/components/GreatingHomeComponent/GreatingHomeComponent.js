@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './GreatingComponent.module.scss';
+import styles from './GreatingHomeComponent.module.scss';
 import UserImageComponent from '../../uiHelpers/UserImageComponent/UserImageComponent';
 
-const GreatingComponent = (props) =>{
+const GreatingHomeComponent = (props) =>{
     return(
-        <div className={styles.GreatingComponent}>
+        <div className={styles.GreatingHomeComponent}>
             <div>
                 <UserImageComponent imgName='userImage' size='20px' imgText='userImage'></UserImageComponent>
                 <span>Indra Shukla</span>
@@ -16,4 +16,4 @@ const GreatingComponent = (props) =>{
     )
 }
 
-export default GreatingComponent;
+export default GreatingHomeComponent;

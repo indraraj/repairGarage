@@ -12,7 +12,7 @@ const FeedBoxComponent = (props) =>{
         <div className={styles.FeedBoxComponent}>
             <div>
                 <UserImageComponent imgName='userImage' size='20px' imgText='userImage'></UserImageComponent>
-                <span>Riya Shukla unvoted this . 4hr</span>
+                <span>Riya Shukla upvoted this . 4hr</span>
                 <CrossCloseComponent tooltipType='close'>Hide this Section.</CrossCloseComponent>
             </div>
             <h1>What made your heart melt today?</h1>

@@ -1,0 +1,27 @@
+@import '../../assets/style/style.scss';
+
+.GreatingAnswerComponent{
+    @extend .containerStyle;
+    .heading{
+        color: $theme-color;
+        border-bottom: 1px solid $border-color;
+        padding-bottom: 10px;
+        span{
+            color: $black-text-color;
+            padding: 0px 10px;
+        }
+    }
+    .footer{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        color: $grey-text;
+        button{
+            height: 30px;
+            border: 1px solid $theme-color;
+            border-radius: 10px;
+            color: $theme-color;
+            background-color: $light-theme-color;
+        }
+    }
+}

@@ -6,6 +6,19 @@
         margin: 0px 10%;
         padding: 32px 32px 32px 32px;
         background-color: $gray-background-color;
+        .ContentGridComponent{
+            display: flex;
+            .cass1{
+                width: 25%;
+                text-align: left;
+            }
+            .cass2{
+                width: 50%;
+            }
+            .cass3{
+                width: 25%;
+            }
+        }
     }
     .GridPageContentSectionOverlay{
         visibility: hidden;

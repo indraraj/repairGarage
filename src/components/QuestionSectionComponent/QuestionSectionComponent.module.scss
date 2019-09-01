@@ -1,0 +1,49 @@
+@import '../../assets/style/style.scss';
+
+.QuestionSectionComponent{
+    border-bottom: 1px solid $border-color;
+    .topSection{
+        font-size: 0.9em;
+        color: $grey-text;
+        padding: 5px 0px;
+        strong{
+            cursor: pointer;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    h1{
+        font-size: 1em;
+        color: $black-text-color;
+        cursor: pointer;
+        margin: 0;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0px;
+        color: $grey-text;
+        div{
+            display: flex;
+            align-items: center;
+        }
+        .footerTools{
+            div{
+                padding: 3px 5px;
+                border-radius: 15px;
+                cursor: pointer;
+                &:hover{
+                    background-color: $gray-background-color;
+                    color: $hover-text-color;
+                }
+                span{
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
