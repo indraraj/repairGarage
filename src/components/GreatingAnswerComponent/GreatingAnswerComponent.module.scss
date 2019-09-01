@@ -17,11 +17,7 @@
         justify-content: space-between;
         color: $grey-text;
         button{
-            height: 30px;
-            border: 1px solid $theme-color;
-            border-radius: 10px;
-            color: $theme-color;
-            background-color: $light-theme-color;
+            @extend .lightThemeButton;
         }
     }
 }

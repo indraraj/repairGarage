@@ -19,3 +19,12 @@
     flex-direction: column;
     z-index: 10000;
 }
+
+.lightThemeButton{
+    background-color: $light-theme-color;
+    color: $theme-color;
+    height: 30px;
+    border: 1px solid $theme-color;
+    border-radius: 10px;
+            
+}

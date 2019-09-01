@@ -16,12 +16,8 @@
             font-size: 0.9em;
         }
         button{
-            background-color: $light-theme-color;
-            color: $theme-color;
+            @extend .lightThemeButton;
             margin: 10px;
-            height: 30px;
-            border: 1px solid $theme-color;
-            border-radius: 10px;
             display: block;
         }
     }
