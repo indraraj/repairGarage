@@ -4,12 +4,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const CrossCloseComponent = (props) =>{
-    const toolType = props.tooltipType;
+    const hideTooTip = {
+        display: 'none'
+    }
+    const showTooltip = props.showTooltip;
     return (
         <div className={styles.CrossCloseComponent}>
-            {toolType === 'close' ? <FontAwesomeIcon icon={faTimes}/> : ''}
-            
-            <span>{props.children}</span>
+            <FontAwesomeIcon icon={faTimes}/>
+            <span style={showTooltip === 'hide' ? hideTooTip : null}>{props.children}</span>
         </div>
     )
 }

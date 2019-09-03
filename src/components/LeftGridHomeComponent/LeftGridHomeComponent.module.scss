@@ -20,5 +20,8 @@
     .selected{
         background-color: $dark-grey-background;
         color: $theme-color;
+        &:hover{
+            color: $theme-color;
+        }
     }
 }

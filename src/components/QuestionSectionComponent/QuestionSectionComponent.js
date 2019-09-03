@@ -10,7 +10,7 @@ const QuestionSectionComponent = (props) =>{
         <div className={styles.QuestionSectionComponent}>
             <div className={styles.topSection}>
                 <span>Question added . Breakup</span>
-                <CrossCloseComponent tooltipType='close'>Hide this story.</CrossCloseComponent>
+                <CrossCloseComponent showTooltip='show'>Hide this story.</CrossCloseComponent>
             </div>
             <h1>
                 How did you get over your breakup and move on?

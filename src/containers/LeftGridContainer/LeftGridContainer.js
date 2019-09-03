@@ -6,8 +6,8 @@ import LeftGridAnswerComponent from '../../components/LeftGridAnswerComponent/Le
 const LeftGridContainer = (props) =>{
     return (
         <div className={styles.LeftGridContainer}>
-            {/* <LeftGridHomeComponent></LeftGridHomeComponent> */}
-            <LeftGridAnswerComponent></LeftGridAnswerComponent>
+            <LeftGridHomeComponent></LeftGridHomeComponent>
+            {/* <LeftGridAnswerComponent></LeftGridAnswerComponent> */}
         </div>
     )
 }

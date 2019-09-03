@@ -5,6 +5,7 @@ import RightGridContainer from '../RightGridContainer/RightGridContainer';
 import LeftGridContainer from '../LeftGridContainer/LeftGridContainer';
 import GridHomeComponent from '../../components/GridHomeComponent/GridHomeComponent';
 import GridAnswerComponent from '../../components/GridAnswerComponent/GridAnswerComponent';
+import GridHomeSessionComponent from '../../components/GridHomeSessionComponent/GridHomeSessionComponent';
 
 class HomeContainer extends Component {
     render(){
@@ -16,8 +17,9 @@ class HomeContainer extends Component {
                         <div className={styles.ContentGridComponent}>
                             <LeftGridContainer></LeftGridContainer>
                             <div className={styles.cass2}>
-                                {/* <GridHomeComponent></GridHomeComponent> */}
-                                <GridAnswerComponent></GridAnswerComponent>
+                                <GridHomeComponent></GridHomeComponent>
+                                {/* <GridAnswerComponent></GridAnswerComponent> */}
+                                {/* <GridHomeSessionComponent></GridHomeSessionComponent> */}
                             </div>
                             <RightGridContainer></RightGridContainer>
                         </div>
