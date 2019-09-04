@@ -65,6 +65,7 @@
       background-color: $gray-background-color;
       margin: 0 -10px -15px -10px;
       height: 50px;
+      color: $grey-text;
       hr{
         margin: 0;
       }
@@ -74,6 +75,9 @@
         align-items: center;
         height: inherit;;
         flex-direction: row-reverse;
+        span{
+          cursor: pointer;
+        }
         button{
           @extend .lightThemeButton;
           padding: 0px 5px;

@@ -2,12 +2,17 @@ import React from 'react';
 import styles from './LeftGridContainer.module.scss';
 import LeftGridHomeComponent from '../../components/LeftGridHomeComponent/LeftGridHomeComponent';
 import LeftGridAnswerComponent from '../../components/LeftGridAnswerComponent/LeftGridAnswerComponent';
+import { Switch, Route} from 'react-router';
 
 const LeftGridContainer = (props) =>{
     return (
         <div className={styles.LeftGridContainer}>
-            <LeftGridHomeComponent></LeftGridHomeComponent>
-            {/* <LeftGridAnswerComponent></LeftGridAnswerComponent> */}
+            <Switch>
+                <Route path='/' exact component={LeftGridHomeComponent}></Route>
+                <Route path='/answer' component={LeftGridAnswerComponent}></Route>
+                <Route path='/home' component={LeftGridHomeComponent}></Route>
+                <Route path='/session' component={LeftGridHomeComponent}></Route>
+            </Switch>
         </div>
     )
 }

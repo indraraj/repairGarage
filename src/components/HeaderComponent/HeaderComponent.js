@@ -5,15 +5,19 @@ import { faHome, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faEdit, faBell } from '@fortawesome/free-regular-svg-icons';
 import UserImageComponent from '../../uiHelpers/UserImageComponent/UserImageComponent';
 import {connect} from 'react-redux';
+import { withRouter } from 'react-router';
 
 const HeaderComponent = (props) =>{
     const [headerState, setHeaderState] = useState({headSection: 'home', askQuestion: true});
     const logoClickHandler = () =>{
+        props.history.push('/');
         window.location.reload();
     }
     const headerNavHandler = (selectedSection) =>{
+        // console.log('Header',props);
         let region = selectedSection;
         setHeaderState({headSection:region, askQuestion: headerState.askQuestion});
+        props.history.push(`/${selectedSection}`);
 
     }
     return(
@@ -64,4 +68,4 @@ const mapDispatchToProps = dispatch =>{
         }
     };
 }
-export default connect(null, mapDispatchToProps)(HeaderComponent);
+export default connect(null, mapDispatchToProps)(withRouter(HeaderComponent));

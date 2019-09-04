@@ -6,6 +6,7 @@ import LeftGridContainer from '../LeftGridContainer/LeftGridContainer';
 import GridHomeComponent from '../../components/GridHomeComponent/GridHomeComponent';
 import GridAnswerComponent from '../../components/GridAnswerComponent/GridAnswerComponent';
 import GridHomeSessionComponent from '../../components/GridHomeSessionComponent/GridHomeSessionComponent';
+import {Switch, Route} from 'react-router';
 
 class HomeContainer extends Component {
     render(){
@@ -17,9 +18,12 @@ class HomeContainer extends Component {
                         <div className={styles.ContentGridComponent}>
                             <LeftGridContainer></LeftGridContainer>
                             <div className={styles.cass2}>
-                                <GridHomeComponent></GridHomeComponent>
-                                {/* <GridAnswerComponent></GridAnswerComponent> */}
-                                {/* <GridHomeSessionComponent></GridHomeSessionComponent> */}
+                                <Switch>
+                                    <Route path='/' exact component={GridHomeComponent}></Route>
+                                    <Route path='/answer' component={GridAnswerComponent}></Route>
+                                    <Route path='/session' component={GridHomeSessionComponent}></Route>
+                                    <Route path='/home' component={GridHomeComponent}></Route>
+                                </Switch>
                             </div>
                             <RightGridContainer></RightGridContainer>
                         </div>
