@@ -3,6 +3,7 @@ import styles from './ModelContainer.module.scss';
 import AskQuestionComponent from '../../components/OverlayModels/AskQuestionComponent/AskQuestionComponent';
 import {connect} from 'react-redux';
 import StartAnswerComponent from '../../components/OverlayModels/StartAnswerComponent/StartAnswerComponent';
+import AddTopicComponent from '../../components/OverlayModels/AddTopicComponent/AddTopicComponent';
 
 class ModelContainer extends Component {
     visibilityStyle = {
@@ -17,6 +18,9 @@ class ModelContainer extends Component {
                 <div className={styles.ModelContainer} style={this.props.ansQ ? null : this.visibilityStyle}>
                     <StartAnswerComponent></StartAnswerComponent>
                 </div>
+                <div className={styles.ModelContainer} style={this.props.addT ? null : this.visibilityStyle}>
+                    <AddTopicComponent></AddTopicComponent>
+                </div>
             </Fragment>
         )
     }
@@ -24,7 +28,8 @@ class ModelContainer extends Component {
 const mapStateToProps = state =>{
     return{
         askQ: state.askQuestion,
-        ansQ: state.ansQuestion
+        ansQ: state.ansQuestion,
+        addT: state.addTopic
     }
 }
 export default connect(mapStateToProps)(ModelContainer);
