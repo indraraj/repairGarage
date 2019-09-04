@@ -1,15 +1,23 @@
 const initialState = {
-    askQuestion: false
+    askQuestion: false,
+    ansQuestion: false
 };
 
 const reducer = (state = initialState, action) =>{
-    if(action.type === 'ASKQ'){
-        return {
-            askQuestion: !state.askQuestion
-        }
-    }
-    return state;
-
+    switch (action.type) {
+        case 'ASKQ':
+            return {
+                ...state,
+                askQuestion: !state.askQuestion
+            }
+        case 'ANSQ':
+            return {
+                ...state,
+                ansQuestion: !state.ansQuestion
+            }
+        default:
+            return state;
+    };
 }
 
 export default reducer;

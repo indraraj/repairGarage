@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import styles from './HeaderComponent.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faSearch } from '@fortawesome/free-solid-svg-icons';
@@ -8,11 +8,30 @@ import {connect} from 'react-redux';
 import { withRouter } from 'react-router';
 
 const HeaderComponent = (props) =>{
-    const [headerState, setHeaderState] = useState({headSection: 'home', askQuestion: true});
+    const getHeaderStateVal = () =>{
+        switch (props.location.pathname){
+            case '/':
+                return 'home';
+            case '/home':
+                return 'home';
+            case '/session':
+                return 'home';
+            case '/answer':
+                return 'answer';
+            case '/notification':
+                return 'notification';
+            default:
+                return 'home'    
+        }
+    }
+    const [headerState, setHeaderState] = useState({headSection: getHeaderStateVal(), askQuestion: true});
     const logoClickHandler = () =>{
         props.history.push('/');
         window.location.reload();
     }
+    // useEffect(()=>{
+    //     console.log('Header',props.location.pathname);
+    // });
     const headerNavHandler = (selectedSection) =>{
         // console.log('Header',props);
         let region = selectedSection;
