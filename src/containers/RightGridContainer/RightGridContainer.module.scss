@@ -1,24 +1,10 @@
 @import '../../assets/style/style.scss';
 
 .RightGridContainer{
-    width: 25%;
+    width: 20%;
     text-align: left;
+    font-size: 0.95em;
     color: $grey-text;
     box-sizing: border-box;
-    padding: 0px 15px 0px 45px;
-    .containerBox{
-        @extend .containerStyle;
-        p{
-            margin: 5px 0px;
-            color: $black-text-color;
-        }
-        span{
-            font-size: 0.9em;
-        }
-        button{
-            @extend .lightThemeButton;
-            margin: 10px;
-            display: block;
-        }
-    }
+    padding: 0px 15px 0px 30px;
 }

@@ -4,6 +4,8 @@ const images = {
     //     comments: require('./profile/comments.png'),
     // },
     userImage: require('./indra.jpg'),
+    riyaImage: require('./riya.jpeg'),
+    baeeImage: require('./baee.jpeg'),
     logo: require('./logo.PNG')
 };
 

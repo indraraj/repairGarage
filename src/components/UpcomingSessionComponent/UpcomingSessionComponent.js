@@ -20,7 +20,7 @@ const UpcomingSessionComponent = (props) =>{
                         <div className={styles.scrollCardsHeading}>
                             <UserImageComponent size='30px' imgName='userImage' imgText='userImage'></UserImageComponent>
                             <div>
-                                <p>Kazerina Rules</p>
+                                <p>Indra Shukla</p>
                                 <span>Co-founder and CEO of Renovo</span>
                             </div>
                         </div>
@@ -36,7 +36,7 @@ const UpcomingSessionComponent = (props) =>{
                 <div className={styles.scrollCards}>
                     <div className={styles.scrollCardsTop}>
                         <div className={styles.scrollCardsHeading}>
-                            <UserImageComponent size='30px' imgName='userImage' imgText='userImage'></UserImageComponent>
+                            <UserImageComponent size='30px' imgName='riyaImage' imgText='riyaImage'></UserImageComponent>
                             <div>
                                 <p>Riya Adhikari</p>
                                 <span>Co-founder and CEO of Repair Grarge</span>

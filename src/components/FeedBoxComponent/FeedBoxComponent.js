@@ -10,10 +10,14 @@ import { faHeart, faComment } from '@fortawesome/free-regular-svg-icons';
 const FeedBoxComponent = (props) =>{
     return(
         <div className={styles.FeedBoxComponent}>
-            <div>
-                <UserImageComponent imgName='userImage' size='20px' imgText='userImage'></UserImageComponent>
-                <span>Riya Shukla upvoted this . 4hr</span>
-                <CrossCloseComponent showTooltip='show'>Hide this Section.</CrossCloseComponent>
+            <div className={styles.feedTop}>
+                <div>
+                    <UserImageComponent imgName='riyaImage' size='20px' imgText='riyaImage'></UserImageComponent>
+                    <span><span className={styles._username}>Riya Adhikari</span>upvoted this . 4hr</span>
+                </div>
+                <div>
+                    <CrossCloseComponent showTooltip='show'>Hide this Section.</CrossCloseComponent>
+                </div>
             </div>
             <h1>What made your heart melt today?</h1>
             <div className={styles.PublisherDetail}>

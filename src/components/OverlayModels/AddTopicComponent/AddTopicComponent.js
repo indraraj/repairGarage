@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const AddTopicComponent = (props) =>{
+    const topicArray = ['Break Up','Proposal Ideas','Live in lifestyle','Romance','Long Distance Relationship']
     return (
         <div className={styles.AddTopicComponent}>
           <div className={styles.overlayHeader}>
@@ -23,11 +24,7 @@ const AddTopicComponent = (props) =>{
               <div>
                   <input placeholder='Search for topic'></input>
                   <ul>
-                      <li>Break Up <span><FontAwesomeIcon icon={faTimes}/></span></li>
-                      <li>Proposal Ideas <span><FontAwesomeIcon icon={faTimes}/></span></li>
-                      <li>Live in lifestyle <span><FontAwesomeIcon icon={faTimes}/></span></li>
-                      <li>Romance <span><FontAwesomeIcon icon={faTimes}/></span></li>
-                      <li>Long Distance Relationship <span><FontAwesomeIcon icon={faTimes}/></span></li>
+                      { topicArray.map((topic)=><li keys={topic}>{topic} <span><FontAwesomeIcon icon={faTimes}/></span></li>)}
                   </ul>
               </div>
             </div>

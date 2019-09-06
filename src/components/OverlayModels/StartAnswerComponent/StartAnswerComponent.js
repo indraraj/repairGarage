@@ -21,7 +21,7 @@ const StartAnswerComponent = (props) =>{
                   <UserImageComponent imgName='userImage' size='25px' imgText='userImage'></UserImageComponent>
                 </div>
                 <div>
-                  <span>Indra Shukla is taking questions on...</span>
+                  <span><span className={styles._username}>Indra Shukla</span> is taking questions on...</span>
                 </div>
               </div>
             </div>

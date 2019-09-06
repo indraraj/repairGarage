@@ -17,7 +17,7 @@ const AskQuestionComponent = (props) =>{
                   <UserImageComponent imgName='userImage' size='30px' imgText='userImage'></UserImageComponent>
                 </div>
                 <div>
-                  <span>Indra Shukla asked</span>
+                  <span><span className={styles._username}>Indra Shukla</span> asked</span>
                 </div>
                 <div className={styles.anonymityConcent}>
                   <FontAwesomeIcon icon={faUserFriends} />

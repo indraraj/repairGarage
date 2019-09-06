@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './LeftGridAnswerComponent.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faNewspaper, faSquare } from '@fortawesome/free-solid-svg-icons';
+import { faSquare } from '@fortawesome/free-solid-svg-icons';
 
 const LeftGridAnswerComponent = (props) =>{
     return(

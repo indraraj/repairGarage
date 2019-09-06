@@ -2,18 +2,26 @@
 
 .FeedBoxComponent{
     @extend .containerStyle;
-    &>div{
-        &>span{
-            font-size: 0.9em;
-            padding: 0 5px;
-            cursor: pointer;
-            color: $grey-text;
-            &:hover { 
-                text-decoration: underline;
+    .feedTop{
+        display: flex;
+        justify-content: space-between;
+        height: inherit;
+        div{
+            height: inherit;
+            display: flex;
+            align-items: center;
+            &:first-of-type{
+                display: flex;
+                align-items: center;
+                span{
+                    font-size: 0.9em;
+                    padding: 0 5px;
+                    cursor: pointer;
+                    color: $grey-text;
+                }
             }
         }
     }
-    
     h1{
         font-size: 1.2em;
         font-weight: 700;

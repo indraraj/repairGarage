@@ -8,15 +8,21 @@
         background-color: $gray-background-color;
         .ContentGridComponent{
             display: flex;
-            .cass1{
-                width: 25%;
-                text-align: left;
-            }
-            .cass2{
-                width: 50%;
-            }
-            .cass3{
-                width: 25%;
+            .leftandcenter{
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                .userDetails{
+                    border-bottom: 2px solid $border-color;
+                    margin-bottom: 20px;
+                    // display: none
+                }
+                .pageContent{
+                    display: flex;
+                    .center{
+                        width: 80%;
+                    }
+                }
             }
         }
     }
