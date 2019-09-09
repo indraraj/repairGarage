@@ -10,9 +10,10 @@ const LeftGridContainer = (props) =>{
         <div className={styles.LeftGridContainer}>
             <Switch>
                 <Route path='/' exact component={LeftGridHomeComponent}></Route>
-                <Route path='/answer' component={LeftGridProfileComponent}></Route>
+                <Route path='/answer' component={LeftGridAnswerComponent}></Route>
                 <Route path='/home' component={LeftGridHomeComponent}></Route>
                 <Route path='/session' component={LeftGridHomeComponent}></Route>
+                <Route path='/profile' component={LeftGridProfileComponent}></Route>
             </Switch>
         </div>
     )

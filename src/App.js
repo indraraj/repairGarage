@@ -7,12 +7,12 @@ import { BrowserRouter } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <div>
-        <BrowserRouter>
-          <HomeContainer></HomeContainer>
-        </BrowserRouter>      
-      </div>
-      <ModelContainer></ModelContainer> 
+      <BrowserRouter>
+        <div>
+            <HomeContainer></HomeContainer>
+        </div>
+        <ModelContainer></ModelContainer> 
+      </BrowserRouter>     
     </div>
   );
 }

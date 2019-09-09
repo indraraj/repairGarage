@@ -12,11 +12,6 @@
                 width: 80%;
                 display: flex;
                 flex-direction: column;
-                .userDetails{
-                    border-bottom: 2px solid $border-color;
-                    margin-bottom: 20px;
-                    // display: none
-                }
                 .pageContent{
                     display: flex;
                     .center{

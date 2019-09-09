@@ -7,7 +7,8 @@ import { faBell } from '@fortawesome/free-regular-svg-icons';
 
 const ProfileUserDetailsComponent = (props) =>{
     return(
-        <div className={styles.ProfileUserDetailsComponent}>
+        <div className={styles.wrapper}>
+            <div className={styles.ProfileUserDetailsComponent}>
             <div className={styles.userimage}>
                 <UserImageComponent imgName='baeeImage' size='150px' imgText='baeeImage'></UserImageComponent>
             </div>
@@ -34,8 +35,10 @@ const ProfileUserDetailsComponent = (props) =>{
                         <FontAwesomeIcon icon={faEllipsisH}></FontAwesomeIcon>
                     </div>
                 </div>
+             </div>
             </div>
         </div>
+        
     )
 };
 

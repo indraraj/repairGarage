@@ -8,6 +8,7 @@ import GridAnswerComponent from '../../components/GridAnswerComponent/GridAnswer
 import GridHomeSessionComponent from '../../components/GridHomeSessionComponent/GridHomeSessionComponent';
 import {Switch, Route} from 'react-router';
 import ProfileUserDetailsComponent from '../../components/ProfileUserDetailsComponent/ProfileUserDetailsComponent';
+import GridProfileComponent from '../../components/GridProfileComponent/GridProfileComponent';
 
 class HomeContainer extends Component {
     render(){
@@ -18,9 +19,7 @@ class HomeContainer extends Component {
                     <div className={styles.GridPageContentSection}>
                         <div className={styles.ContentGridComponent}>
                             <div className={styles.leftandcenter}>
-                                <div  className={styles.userDetails}>
-                                   <ProfileUserDetailsComponent></ProfileUserDetailsComponent>
-                                </div>
+                                <Route path='/profile' component={ProfileUserDetailsComponent}></Route>
                                 <div  className={styles.pageContent}>
                                         <LeftGridContainer></LeftGridContainer>
                                     <div className={styles.center}>
@@ -29,6 +28,7 @@ class HomeContainer extends Component {
                                             <Route path='/answer' component={GridAnswerComponent}></Route>
                                             <Route path='/session' component={GridHomeSessionComponent}></Route>
                                             <Route path='/home' component={GridHomeComponent}></Route>
+                                            <Route path='/profile' component={GridProfileComponent}></Route>
                                         </Switch>
                                     </div>
                                 </div>

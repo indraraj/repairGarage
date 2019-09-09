@@ -1,8 +1,8 @@
 import React from 'react';
 import style from './RightGridProfileComponent.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEllipsisH, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
-import { faHeart, faComment } from '@fortawesome/free-regular-svg-icons';
+import { faGraduationCap, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { faEye } from '@fortawesome/free-regular-svg-icons';
 
 const RightGridProfileComponent = (props) =>{
     return(
@@ -24,7 +24,7 @@ const RightGridProfileComponent = (props) =>{
                     </div>
                     <div>
                         <div>
-                            <FontAwesomeIcon icon={faGraduationCap}></FontAwesomeIcon>
+                            <FontAwesomeIcon icon={faMapMarkerAlt}></FontAwesomeIcon>
                         </div>
                         <div className={style.content}>
                             <p>Livesin Bangalore, Karnataka, India</p>
@@ -33,7 +33,7 @@ const RightGridProfileComponent = (props) =>{
                     </div>
                     <div>
                         <div>
-                            <FontAwesomeIcon icon={faGraduationCap}></FontAwesomeIcon>
+                            <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
                         </div>
                         <div className={style.content}>
                             <p>440k</p>

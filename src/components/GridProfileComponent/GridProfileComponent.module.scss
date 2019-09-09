@@ -1,0 +1,17 @@
+@import '../../assets/style/style.scss';
+
+.GridProfileComponent{
+    display: flex;
+    flex-direction: column;
+    .profileTop{
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9em;
+        border-bottom: 1px solid $border-color;
+        padding-bottom: 10px;
+        margin-bottom: 10px; 
+        .ansTypeNotSelected{
+            color: $grey-text;
+        }
+    }
+}
