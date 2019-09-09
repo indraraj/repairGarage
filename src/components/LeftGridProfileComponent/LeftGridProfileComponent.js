@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './LeftGridProfileComponent.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSquare } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faSquare } from '@fortawesome/free-solid-svg-icons';
 
 const LeftGridProfileComponent = (props) => {
     return(

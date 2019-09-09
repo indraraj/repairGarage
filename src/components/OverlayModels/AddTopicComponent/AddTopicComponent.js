@@ -24,7 +24,7 @@ const AddTopicComponent = (props) =>{
               <div>
                   <input placeholder='Search for topic'></input>
                   <ul>
-                      { topicArray.map((topic)=><li keys={topic}>{topic} <span><FontAwesomeIcon icon={faTimes}/></span></li>)}
+                      { topicArray.map((topic)=><li key={topic}>{topic} <span><FontAwesomeIcon icon={faTimes}/></span></li>)}
                   </ul>
               </div>
             </div>

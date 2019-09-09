@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './UpcomingSessionComponent.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMicrophone, faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import { faMicrophone, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import UserImageComponent from '../../uiHelpers/UserImageComponent/UserImageComponent';
 
 const UpcomingSessionComponent = (props) =>{

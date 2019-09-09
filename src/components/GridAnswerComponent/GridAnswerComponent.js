@@ -1,5 +1,5 @@
 import React,{ Fragment} from 'react';
-import styles from './GridAnswerComponent.module.scss';
+// import styles from './GridAnswerComponent.module.scss';
 import GreatingAnswerComponent from '../GreatingAnswerComponent/GreatingAnswerComponent';
 import QuestionsForYouComponent from '../QuestionsForYouComponent/QuestionsForYouComponent';
 import QuestionByFollowerComponent from '../QuestionByFollowerComponent/QuestionByFollowerComponent';
