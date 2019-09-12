@@ -1,0 +1,86 @@
+@import '../../../assets/style/style.scss';
+
+.LoginComponent{
+    display: flex;
+    margin-top: 40px;
+    .socialMedia{
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        padding: 10px 30px 10px 10px;
+        border-right: 1px solid $border-color; 
+        box-sizing: border-box;
+        &>div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            button{
+                border: none;
+                color: white;
+            }
+            // .socialIcon{
+            //     width: 25px;
+            // }
+            div{
+                background-color: white;
+            }
+        }
+        .facebook{
+            background-color: $facebook-color;
+            cursor: pointer;
+            button{
+                background-color: $facebook-color;
+            }
+        }
+        .google{
+            background-color: $google-color;
+            cursor: pointer;
+            button{
+                background-color: $google-color;
+            }
+        }
+        .signup{
+            width: 250px;
+            span{
+                font-size: 0.9em;
+                color: $grey-text;
+            }
+        }
+    }
+    .userLogin{
+        text-align: left;
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        padding: 10px 10px 10px 30px;
+        box-sizing: border-box;
+        h3{
+            margin: 0;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        span{
+            font-size: 0.9em;
+            color: $grey-text;
+        }
+        input{
+            border-radius: 2px;
+            padding: 5px 10px;
+            border: 1px solid $border-color;
+            background-color: $gray-background-color;
+        }
+        div{
+            margin-bottom: 10px;
+        }
+        .loginButton{
+            display: flex;
+            justify-content: flex-end;
+            button{
+                @extend .lightThemeButton;
+            }
+        }
+    }
+}
