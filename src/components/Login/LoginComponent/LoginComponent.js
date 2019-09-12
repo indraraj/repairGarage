@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import styles from './LoginComponent.module.scss';
 import { connect } from 'react-redux';
 import axiosAuth from '../../../axios/axios-auth';
+import { withRouter } from 'react-router';
 
 const LoginComponent = (props) => {
     const [userForm, SetUserForm] = useState({username:'',password:''});
@@ -17,6 +18,9 @@ const LoginComponent = (props) => {
             password: e.target.value
         })
     }
+    const signupHandler = () =>{
+        props.history.push('/signup');
+    }
     const loginClickHandler = () =>{
         console.log('Login Clicked');
         // if(userForm.username === 'indra' && userForm.password === 'ihl309'){
@@ -27,9 +31,10 @@ const LoginComponent = (props) => {
             "password": userForm.password,
             "returnSecureToken": true
         }
-        axiosAuth.post('',postRequest)
+        axiosAuth.post('accounts:signInWithPassword?key=AIzaSyDwfiuUXhSWqgN69x19VGB0ICy6XDklTKY',postRequest)
             .then( () =>{
                 props.authenticateUser();
+                props.history.push('/home');
             })
             .catch( e =>{
                 console.log(e);
@@ -52,7 +57,7 @@ const LoginComponent = (props) => {
                 </div>
                 <div className={styles.signup}>
                     <span>
-                        <span className={styles.ancherText}>Sign up with Email.</span> By Signing up you indicate that you have read and aggreed to Terms and contition.
+                        <span className={styles.ancherText} onClick={signupHandler}>Sign up with Email.</span> By Signing up you indicate that you have read and aggreed to Terms and contition.
                     </span>
                 </div>
             </div>
@@ -77,4 +82,4 @@ const mapDispatchToProps = dispatch =>{
         authenticateUser : () => dispatch({type: 'AUTHENTICATE'})
     }
 }
-export default connect(null, mapDispatchToProps)(LoginComponent);
+export default withRouter(connect(null, mapDispatchToProps)(LoginComponent));

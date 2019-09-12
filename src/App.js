@@ -12,12 +12,7 @@ function App(props) {
     <div className={styles.App}>
       <BrowserRouter>
         <div>
-          {props.authUser ?
-            <HomeContainer></HomeContainer> :
-            <Switch>
-              <Route path='/' component={LoginContainer}></Route>
-              <Redirect to='/'></Redirect>
-            </Switch>}
+          {props.authUser ? <HomeContainer></HomeContainer> : <LoginContainer></LoginContainer>}
         </div>
         <ModelContainer></ModelContainer>
       </BrowserRouter>
