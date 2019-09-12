@@ -1,8 +1,40 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './LoginComponent.module.scss';
-import images from '../../../assets/images/Images ';
+import { connect } from 'react-redux';
+import axiosAuth from '../../../axios/axios-auth';
 
 const LoginComponent = (props) => {
+    const [userForm, SetUserForm] = useState({username:'',password:''});
+    const usernameHandler = (e) =>{
+        SetUserForm({
+            username: e.target.value,
+            password: userForm.password
+        })
+    }
+    const passwordHandler = (e) =>{
+        SetUserForm({
+            username: userForm.username,
+            password: e.target.value
+        })
+    }
+    const loginClickHandler = () =>{
+        console.log('Login Clicked');
+        // if(userForm.username === 'indra' && userForm.password === 'ihl309'){
+        //     props.authenticateUser();
+        // }
+        let postRequest = {
+            "email": userForm.username,
+            "password": userForm.password,
+            "returnSecureToken": true
+        }
+        axiosAuth.post('',postRequest)
+            .then( () =>{
+                props.authenticateUser();
+            })
+            .catch( e =>{
+                console.log(e);
+            })
+    }
     return (
         <div className={styles.LoginComponent}>
             <div className={styles.socialMedia}>
@@ -20,25 +52,29 @@ const LoginComponent = (props) => {
                 </div>
                 <div className={styles.signup}>
                     <span>
-                        Sign up with Email. By Signing up you indicate that you have read and aggreed to Terms and contition.
+                        <span className={styles.ancherText}>Sign up with Email.</span> By Signing up you indicate that you have read and aggreed to Terms and contition.
                     </span>
                 </div>
             </div>
             <div className={styles.userLogin}>
                 <h3>Login</h3>
                 <div>
-                    <input placeholder='Username'></input>
+                    <input placeholder='Username' onChange={usernameHandler} value={userForm.username}></input>
                 </div>
                 <div>
-                    <input placeholder='Password'></input>
+                    <input placeholder='Password' onChange={passwordHandler} value={userForm.password}></input>
                 </div>
                 <span>Forgot Password?</span>
                 <div className={styles.loginButton}>
-                    <button>Login</button>
+                    <button onClick={loginClickHandler}>Login</button>
                 </div>
             </div>
         </div>
     )
 }
-
-export default LoginComponent;
+const mapDispatchToProps = dispatch =>{
+    return{
+        authenticateUser : () => dispatch({type: 'AUTHENTICATE'})
+    }
+}
+export default connect(null, mapDispatchToProps)(LoginComponent);

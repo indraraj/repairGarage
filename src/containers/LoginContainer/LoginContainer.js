@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import styles from './LoginContainer.module.scss';
 import LoginComponent from '../../components/Login/LoginComponent/LoginComponent';
+import SignUpComponent from '../../components/Login/SignUpComponent/SignUpComponent';
 
 class LoginContainer extends Component{
     render(){
@@ -12,7 +13,8 @@ class LoginContainer extends Component{
                         <h1>Repair Garage</h1>
                         <p>A place you can trust to share and seek path toward better relationship.</p>
                     </div>
-                    <LoginComponent></LoginComponent>
+                    {/* <LoginComponent></LoginComponent> */}
+                    <SignUpComponent></SignUpComponent>
                 </div>
             </div>
         )

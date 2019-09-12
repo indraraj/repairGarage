@@ -1,7 +1,8 @@
 const initialState = {
     askQuestion: false,
     ansQuestion: false,
-    addTopic: false
+    addTopic: false,
+    userAuthenticated: false
 };
 
 const reducer = (state = initialState, action) =>{
@@ -20,6 +21,11 @@ const reducer = (state = initialState, action) =>{
             return {
                 ...state,
                 addTopic: !state.addTopic
+            }
+        case 'AUTHENTICATE':
+            return {
+                ...state,
+                userAuthenticated: !state.userAuthenticated
             }
         default:
             return state;

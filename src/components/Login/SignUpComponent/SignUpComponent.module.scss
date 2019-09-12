@@ -1,0 +1,50 @@
+@import '../../../assets/style/style.scss';
+
+.SignUpComponent{
+    display: flex;
+    flex-direction: column;
+    .userDetails{
+        display: flex;
+        justify-content: center;
+        input{
+            margin: 0px 10px;
+            width: 180px;
+        }
+    }
+    .inputDiv{
+        input{
+            width: 400px;
+        }
+    }
+    div{
+        margin-bottom: 15px;
+        span{
+            color: $grey-text;
+            font-size: 0.9em;
+        }
+    }
+    input{
+        padding: 5px 10px;
+        border: 1px solid $border-color;
+        border-radius: 2px;
+        color: $grey-text;
+    }
+    h3{
+        margin: 0;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    button{
+        @extend .lightThemeButton;
+    }
+    .disableButton{
+        background-color: #ffd1e8;
+        color: white;
+        &:hover{
+            cursor: auto;
+        }
+    }
+    .formGreen{
+        border: 1px solid green;
+    }
+}

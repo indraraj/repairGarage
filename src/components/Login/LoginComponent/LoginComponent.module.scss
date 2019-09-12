@@ -2,7 +2,6 @@
 
 .LoginComponent{
     display: flex;
-    margin-top: 40px;
     .socialMedia{
         display: flex;
         width: 50%;
@@ -21,9 +20,9 @@
                 border: none;
                 color: white;
             }
-            // .socialIcon{
-            //     width: 25px;
-            // }
+            .socialIcon{
+                width: 25px;
+            }
             div{
                 background-color: white;
             }
@@ -43,10 +42,14 @@
             }
         }
         .signup{
-            width: 250px;
-            span{
+            // width: 250px;
+            &>span{
                 font-size: 0.9em;
                 color: $grey-text;
+            }
+            .ancherText{
+                @extend ._username;
+                color: $hover-text-color;
             }
         }
     }

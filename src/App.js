@@ -1,23 +1,34 @@
 import React from 'react';
 import styles from './App.module.scss';
 import HomeContainer from './containers/HomeContainer/HomeContainer';
-import images from './assets/images/Images '; 
 import ModelContainer from './containers/ModelContainer/ModelContainer';
 import { BrowserRouter } from 'react-router-dom';
 import LoginContainer from './containers/LoginContainer/LoginContainer';
+import { Switch, Redirect, Route } from 'react-router';
+import { connect } from 'react-redux'
 
-function App() {
+function App(props) {
   return (
     <div className={styles.App}>
       <BrowserRouter>
         <div>
-            {/* <HomeContainer></HomeContainer> */}
-            <LoginContainer></LoginContainer>
+          {props.authUser ?
+            <HomeContainer></HomeContainer> :
+            <Switch>
+              <Route path='/' component={LoginContainer}></Route>
+              <Redirect to='/'></Redirect>
+            </Switch>}
         </div>
-        <ModelContainer></ModelContainer> 
-      </BrowserRouter>     
+        <ModelContainer></ModelContainer>
+      </BrowserRouter>
     </div>
   );
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    authUser: state.userAuthenticated
+  }
+}
+
+export default connect(mapStateToProps)(App);
