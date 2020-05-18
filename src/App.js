@@ -4,7 +4,6 @@ import HomeContainer from './containers/HomeContainer/HomeContainer';
 import ModelContainer from './containers/ModelContainer/ModelContainer';
 import { BrowserRouter } from 'react-router-dom';
 import LoginContainer from './containers/LoginContainer/LoginContainer';
-import { Switch, Redirect, Route } from 'react-router';
 import { connect } from 'react-redux'
 
 function App(props) {
