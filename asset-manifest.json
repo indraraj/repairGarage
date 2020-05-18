@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/repairGarage/static/css/main.26f558ea.chunk.css",
+    "main.js": "/repairGarage/static/js/main.824e8bae.chunk.js",
+    "main.js.map": "/repairGarage/static/js/main.824e8bae.chunk.js.map",
+    "runtime-main.js": "/repairGarage/static/js/runtime-main.fb4b1b5f.js",
+    "runtime-main.js.map": "/repairGarage/static/js/runtime-main.fb4b1b5f.js.map",
+    "static/js/2.fe8b2986.chunk.js": "/repairGarage/static/js/2.fe8b2986.chunk.js",
+    "static/js/2.fe8b2986.chunk.js.map": "/repairGarage/static/js/2.fe8b2986.chunk.js.map",
+    "index.html": "/repairGarage/index.html",
+    "precache-manifest.6edf59604f625b012e810375400d2fd9.js": "/repairGarage/precache-manifest.6edf59604f625b012e810375400d2fd9.js",
+    "service-worker.js": "/repairGarage/service-worker.js",
+    "static/css/main.26f558ea.chunk.css.map": "/repairGarage/static/css/main.26f558ea.chunk.css.map",
+    "static/js/2.fe8b2986.chunk.js.LICENSE.txt": "/repairGarage/static/js/2.fe8b2986.chunk.js.LICENSE.txt",
+    "static/media/background1.jpg": "/repairGarage/static/media/background1.08105730.jpg",
+    "static/media/baee.jpeg": "/repairGarage/static/media/baee.285ae49b.jpeg",
+    "static/media/google.png": "/repairGarage/static/media/google.572fe388.png",
+    "static/media/indra.jpg": "/repairGarage/static/media/indra.3b47ecc9.jpg",
+    "static/media/logo.PNG": "/repairGarage/static/media/logo.4d7bdbce.PNG",
+    "static/media/riya.jpeg": "/repairGarage/static/media/riya.8d86598f.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fb4b1b5f.js",
+    "static/js/2.fe8b2986.chunk.js",
+    "static/css/main.26f558ea.chunk.css",
+    "static/js/main.824e8bae.chunk.js"
+  ]
+}
